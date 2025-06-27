@@ -52,14 +52,33 @@ how the repo looked at the end of the operation.
 
 Ok, but why should I care?
 ---
+<!-- column_layout: [1,1] -->
+
+<!-- column: 0 -->
 
 # Rebasing is hard
-not really _hard_ hard but _cumbersome_ hard, git takes you trough a long
-process of choosing which commits to rebase, update refs?, maybe, if you want to
-edit a commit in the meantime good luck and so on. JJ makes things easier and
+not really _hard_ hard but _cumbersome_ hard, git takes you trough a long process of choosing which commits to rebase, update refs?, maybe, if you want to edit a commit in the meantime good luck and so on. JJ makes things easier and
 smoother
 
 ![image:width:80%](images/kitten.png)
+<!-- column: 1 -->
+
+# Editing intermidiate commits is hard
+
+in jj is just
+
+```bash
+jj edit [revision]
+```
+
+# inserting, splitting, whatever, jj makes it easy
+JJ gives you tools and makes based opinions the easy way of using such tools
+```bash
+jj split # pops up a ui to split changes
+
+jj new # can put commits after or before a particualr revision / sevset
+```
+<!-- reset_layout -->
 
 Fine, can I touch something?
 ---
